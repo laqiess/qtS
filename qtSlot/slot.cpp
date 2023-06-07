@@ -8,9 +8,9 @@ Slot::Slot(QWidget *parent)
     ui->setupUi(this);
 
     //connect соединяет методы двух объектов
-    //this объект Slot
-    // связываем кнопки с соответствующими слотами
-    // с использованием указателей на методы
+    //this объект Slot.
+    // связываем кнопки с соответствующими слотами.
+    // с использованием указателей на методы.
        QObject::connect(ui->pushButtonGreen, &QPushButton::clicked, this, &Slot::setColorGreen);
        QObject::connect(ui->pushButtonRed, &QPushButton::clicked, this, &Slot::setColorRed);
        QObject::connect(ui->pushButtonBlue, &QPushButton::clicked, this, &Slot::setColorBlue);
