@@ -18,7 +18,7 @@ Slot::Slot(QWidget *parent)
        // связываем сигнал getColor со слотом, отвечающим за смену цвета фона.
        QObject::connect(this, &Slot::getColor, this, &Slot::onClicked);
 
-       // подключаем сигнал с передачей номера кнопки к слоту вывода сообщения
+       // подключаем сигнал с передачей номера кнопки к слоту вывода сообщения.
        QObject::connect(this, &Slot::getColor, this, &Slot::onClicked1);
    }
 
